@@ -1,4 +1,9 @@
-int n = 9;           // n+1
+// Por Roberto A. Zavala
+// Breve : 
+// Libro : https://www.amazon.com.mx/dp/B074TTGLL2
+// 🙏🏼    : DNv7acPAeVBhTXbKv26itJecPG1SPy2o4F
+
+const int n = 9;     // n+1
 int Pm[n];           // subconjunto de n datos
 int m = n-1;         // contador
 int I;               // intensidad
@@ -19,7 +24,7 @@ Serial.print(Ip);
 
 void PMD ()
 {
-  for ( int i=0; i<=m-1; i++ ) { Prm[i] = Prm[i+1]; }
+  for ( int i=0; i<=m-1; i++ ) { Pm[i] = Pm[i+1]; }
   Pm[m] = I ;
   Ip    = 0;
   for ( int i=0; i<= m;  i++ ) { Ip = Ip + Pm[m]; } 
