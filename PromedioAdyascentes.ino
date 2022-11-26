@@ -16,8 +16,10 @@ Serial.begin(9600);
 
 void loop()
 {
-I = analogRead(A0);  Serial.print(I);  Serial.print(" , ");
-PMD();               Serial.println(Ip);
+I = analogRead(A0);
+PMD();
+//Serial.print(micros());  Serial.print("\t"); // Comentar para Serial Plotter
+Serial.print(Pm[2]);  Serial.print("\t");  Serial.println(Ip);
 delay(100);
 }
 
